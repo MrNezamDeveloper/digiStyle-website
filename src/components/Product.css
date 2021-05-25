@@ -1,0 +1,140 @@
+.Product {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 15px;
+}
+.Product-container {
+    padding: 7px 7px 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.Product-image {
+    width: 100%;
+    padding-bottom: 131%;
+    position: relative;
+}
+.Product-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: calc(100% - 2px);
+}
+
+.Product-image-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.03;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.Product-info {
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+    right: 7px;
+    display: flex;
+    flex-direction: column;
+}
+.Product-info .bottom-option {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    direction: ltr;
+}
+.Product-info .bottom-option span {
+    background-color: black;
+    font: 14px "Shabnam FD";
+    font-weight: 700;
+    color: white;
+    padding: 6px 14px 5px;
+}
+.Product-info .Product-info-container {
+    display: flex;
+    flex: 1 0 100%;
+    padding: 5px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    z-index: 4;
+}
+.Product-info .Product-brand {
+    font: 16px "Shabnam FD";
+    color: black;
+    font-weight: 700;
+}
+.Product-discount {
+    text-align: left;
+    font: 12px "Shabnam FD";
+    color: #a2a2a2;
+    line-height: 24px;
+    text-decoration: line-through;
+}
+.Product-info .Product-name {
+    color: #666;
+    font: 14px "Shabnam FD";
+    line-height: 24px;
+    display: flex;
+    flex: 1 1 50%;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.Product-info .Product-price-container {
+    white-space: nowrap;
+}
+.Product-info .Product-price {
+    font: 18px "Shabnam FD";
+    color: black;
+    font-weight: 700;
+}
+.Product-info .Product-unit {
+    font: 12px "Shabnam FD";
+    color: black;
+    line-height: 24px;
+    margin-right: 2px;
+}
+.Product-info .Product-add-to-cart {
+    background-color: #f04d7d;
+    padding: 10px 35px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    align-items: center;
+    font: 14px "Shabnam FD";
+    cursor: pointer;
+}
+.Product-info .Product-add-to-cart-later {
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 35px;
+    box-sizing: border-box;
+    color: black;
+    display: flex;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    font: 14px "Shabnam FD";
+}
+.Product-info-container--cart-btns {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+}
+.Product-info .Product-add-to-cart-text {
+    line-height: 24px;
+    margin-right: 7px;
+}

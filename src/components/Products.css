@@ -1,0 +1,17 @@
+.Products {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.Products-wrapper {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.Products-wrapper .Products-item {
+    width: 25%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}

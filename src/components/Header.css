@@ -1,0 +1,207 @@
+.Header {
+    width: 100%;
+    padding-top: 22px;
+}
+
+.Header-container {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.Header-col {
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    height: 100%;
+}
+
+
+.Header-col.Header-user-items {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    margin-top: 15px;
+}
+
+.Header-col.Header-user-items li {
+    margin-left: 15px;
+    list-style: none;
+    display: flex;
+}
+.notification-badge {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    background-color: #ef5a88;
+    font: 10px "Shabnam FD";
+    color: white;
+    text-align: center;
+    line-height: 14px;
+}
+
+.Header-col.Header-user-items .Header-user-items--user-login-text {
+    font: 14px "Shabnam FD";
+
+}
+
+.Header-col.Header-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Header-main--separator {
+    width: 400px;
+    height: 1px;
+    background-color: black;
+    margin-top: 26px;
+}
+
+.Header-main--cats {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: stretch;
+    padding: 10px 10px 0;
+}
+.Header-main--cats li {
+    font: 13px "Shabnam FD";
+    color: black;
+    padding: 10px 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.Header-main--cats li:hover {
+    font-size: 14px;
+    font-weight: bold;
+}
+.Header-main__cats-separator {
+    width: 1px;
+    height: 15px;
+    margin: auto 20px;
+    display: block;
+    background-color: rgba(0,0,0,.54);
+}
+
+.Header-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.Header-search-input-container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.51);
+    width: 192px;
+}
+.Header-search-input-container .Header-search-icon {
+    position: absolute;
+}
+.Header-search-input-container input {
+    border: none;
+    padding:  4px 30px 4px 0;
+    text-align: right;
+    line-height: 24px;
+    font: 12px "Shabnam FD";
+}
+
+.header-user-basket-item:hover .basket-detailed-container {
+    display: block;
+}
+.Header-user-items .basket-detailed-container {
+    width: 390px;
+    display: none;
+    background-color: white;
+    padding: 10px 22px 10px 10px;
+    position: absolute;
+    top: calc(100% + 9px);
+    right: -5px;
+    box-shadow: 0 5px 10px 2px rgba(0,0,0,.1);
+    z-index: 5;
+    border-radius: 5px;
+    border: unset;
+}
+.basket-detailed-container:before {
+    content: "";
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 14px solid white;
+    transform: rotate(-45deg);
+    right: 5px;
+    top: 0;
+    transform: translateY(-70%);
+    background: transparent;
+    position: absolute;
+    z-index: -1;
+}
+.basket-total-container {
+    display: flex;
+    height: 60px;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+.basket-total-container .basket-total-price:before {
+    content: attr(data-lable);
+    color: #000;
+    line-height: 1.67;
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.basket-total-container .basket-total-price:after {
+    content: attr(data-currency);
+    line-height: 2;
+    margin-right: 5px;
+    font-size: 13px;
+    font-weight: normal;
+}
+.basket-total-container .basket-total-price {
+    background-color: #f1f2f4;
+    border-radius: 0 3px 3px 0;
+    display: flex;
+    flex-grow: 1;
+    color: #ef5a88;
+    font: 18px "Shabnam FD";
+    font-weight: bold;
+    line-height: 20px;
+    align-items: center;
+    padding-right: 13px;
+}
+.basket-total-container .basket-total-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100px;
+    background-color: #707070;
+    border-radius: 3px 0 0 3px;
+    font: 14px "Shabnam FD";
+    color: white;
+    margin-right: 3px;
+}
+.basket-total-container .basket-total-count span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.basket-items-container {
+    width: 100%;
+    padding-left: 10px;
+    max-height: 370px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    padding-top: 16px;
+}
+
+
+
+

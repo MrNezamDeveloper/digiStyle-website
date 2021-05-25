@@ -1,0 +1,89 @@
+
+.c-ui-hint,
+.c-ui-icon {
+    font-weight:400;
+    letter-spacing:normal
+}
+.c-ui-icon {
+    position:relative;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    font-size:22px;
+    font-size:1.375rem;
+    line-height:1.091;
+    font-family: digikala;
+}
+.c-ui-icon:before {
+    font-family: digikala;
+}
+.c-ui-icon--basket:before {
+    content:"\E00A\00FE0E"
+}
+.c-ui-icon--floppy:before {
+    content:"\E01E\00FE0E"
+}
+.c-ui-icon--heart:before {
+    content:"\E026\00FE0E"
+}
+.c-ui-icon--heart-narrow:before {
+    content:"\E025\00FE0E"
+}
+.c-ui-icon--instagram:before {
+    content:"\E02A\00FE0E"
+}
+.c-ui-icon--twitter:before {
+    content:"\E03C\00FE0E"
+}
+.c-ui-icon--telegram:before {
+    content:"\E038\00FE0E"
+}
+.c-ui-icon--facebook:before {
+    content:"\E017\00FE0E"
+}
+.c-ui-icon--aparat:before {
+    content:"\E001\00FE0E"
+}
+.c-ui-icon--magnifier:before {
+    content:"\E02E\00FE0E"
+}
+.c-ui-icon--cross:before {
+    content:"\E010\00FE0E"
+}
+.c-ui-icon--remove:before {
+    content:"\E010\00FE0E";
+}
+.c-ui-icon--shapes:before {
+    content:"\E034\00FE0E";
+}
+.c-ui-icon--plus:before {
+    content:"\E033\00FE0E";
+}
+.c-ui-icon--gift:before {
+    content:"\E021\00FE0E";
+}
+.c-ui-icon--arrow-left-line:before {
+    content:"\E005\00FE0E";
+}
+.c-ui-icon--arrow-right-line:before {
+    content:"\E007\00FE0E";
+}
+.c-ui-icon--search-main::before {
+    content: "\E02E\00FE0E";
+}
+.c-ui-icon--notif:after {
+    content:"";
+    display:block;
+    background:#ef6070;
+    border-radius:50%;
+    position:absolute;
+    top:20%;
+    right:4%;
+    width:7px;
+    height:7px
+}
